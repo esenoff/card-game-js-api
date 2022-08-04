@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.card-table{
+    background-image: url(./img/table.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color: #FFF100;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    color: black;
+}
+
+#new-deck{
+    align-self: flex-start;
+    margin: 5px 0 0 0;
+    width: 110px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#new-deck:active{
+    font-size: 14px;
+}
+
+#new-card{
+    height: 40px;
+    font-size: 20px;
+    align-self: stretch;
+}
+
+#new-card:active{
+    font-size: 18px;
+}
+
+.card-slot{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px*5/7);
+}
+
+.card-slot:nth-of-type(1){
+    margin-bottom: 10px;
+}
+
+img{
+    height: 100%;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#remain{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h2{
+    margin: 10px;
+}
